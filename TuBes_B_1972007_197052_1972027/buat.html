@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Model.css">
+	<meta charset="UTF-8">
+	<style>
+	
+	</style>
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type='text/javascript' src="javascript.js">
+	</script>
+</head>
+
+<body onload='hour();online()'>
+
+<div class="cekSignal">
+<img id="onlineOffline" width='100px' height='100px'src=""></img>
+</div>
+
+<div id="YOGYA"><marquee behavior="alternate" scrollamount="15">Yogyakarta</marquee></div>
+<br>
+<table id='pilihan'>
+	<tr >
+		<td>
+		<a id="definisi" class="linking" href="index.html">Sekilas</a>
+		
+		<a id="makanan"  class="linking" href="makanan.html" >Makanan</a>
+		<a id="buat"  class="begin" >Pembuatan</a>
+		<a id="Pembuat"  class="linking" href="tentang.html" >Tentang Kami</a>
+		<div id='jaam' class="wite"></div>
+		<button align="center" onclick="cssHour()">Toggle</button>
+		</td>
+		</td>
+	</tr>
+	<!--<tr><td></td></tr>-->
+
+</table>
+
+
+<div id="isi">
+<p id="konten">
+<h2 align="center">Resep Makanan</h2>
+<a id="gudeg" class="pilihMakan" onclick="reseting('fotoResepGudeg','ketResepGudeg',15);show('isiGudeg','isiKletek','isiTiwul','isiKrecek')">Nasi Gudeg</a>
+<a id="kletek" class="pilihMakan" onclick="reseting('fotoResepKletek','ketResepKletek',17);show('isiKletek','isiGudeg','isiTiwul','isiKrecek')">Sate Kletek</a>
+<a id="tiwul" class="pilihMakan" onclick="reseting('fotoResepTiwul','ketResepTiwul','2');show('isiTiwul','isiKletek','isiGudeg','isiKrecek')">Nasi Tiwul</a>
+<a id="krecek" class="pilihMakan"  onclick="reseting('fotoResepKrecek','ketResepKrecek','12');show('isiKrecek','isiTiwul','isiKletek','isiGudeg')")>Sambel Krecek</a>
+
+<br/>
+<br/>
+<div id="pengantarResep">Kami menyediakan resep makanan Yogya untuk Jiwa yang lapar namun tak bisa ke Yogya</div>
+
+
+<div id="isiGudeg" class="makanan" >
+<div>
+<div class="fotoMakan" >
+	Bahan
+	<a class="prev" id="previous" onclick="downMakan('fotoResepGudeg','ketResepGudeg','15')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoResepGudeg','ketResepGudeg','15')">></a>
+	
+	<a href="https://id.wikipedia.org/wiki/Nangka">
+	<img id="fotoResepGudeg1" src="Pic/Resep Gudeg/nangkaMuda.jpg"></img>
+	</a>
+	<div id="ketResepGudeg1">
+		1.Nangka Muda
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Bawang_merah">
+	<img id="fotoResepGudeg2" src="Pic/Resep Gudeg/bawangMerah.jpg"></img>
+	</a>
+	<div id="ketResepGudeg2">
+		2.Bawang Merah
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Bawang_putih">
+	<img id="fotoResepGudeg3" src="Pic/Resep Gudeg/bawangPutih.jpg"></img>
+	</a>
+	<div id="ketResepGudeg3">
+		3.Bawang Putih
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Kemiri">
+	<img id="fotoResepGudeg4" src="Pic/Resep Gudeg/kemiri.jpg"></img>
+	</a>
+	<div id="ketResepGudeg4">
+		4.Kemiri
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Ketumbar">
+	<img id="fotoResepGudeg5" src="Pic/Resep Gudeg/ketumbar.jpg"></img>
+	</a>
+	<div id="ketResepGudeg5">
+		5.Ketumbar
+	</div>
+	
+	<a href="https://en.wikipedia.org/wiki/Salt">
+	<img id="fotoResepGudeg6" src="Pic/Resep Gudeg/garam.jpg"></img>
+	</a>
+	<div id="ketResepGudeg6">
+		6.Garam
+	</div>
+	
+	<a href="https://en.wikipedia.org/wiki/Broth">
+	<img id="fotoResepGudeg7" src="Pic/Resep Gudeg/kalduAyam.jpg"></img>
+	</a>
+	<div id="ketResepGudeg7">
+		7.Kaldu bubuk ayam
+	</div>
+
+	<a href="https://id.wikipedia.org/wiki/Santan">
+	<img id="fotoResepGudeg8" src="Pic/Resep Gudeg/santan.jpg"></img>
+	</a>
+	<div id="ketResepGudeg8">
+		8.Santan
+	</div>	
+	
+	<a href="https://id.wikipedia.org/wiki/Lengkuas">
+	<img id="fotoResepGudeg9" src="Pic/Resep Gudeg/lengkuas.jpg"></img>
+	</a>
+	<div id="ketResepGudeg9">
+		9.Lengkuas
+	</div>
+	
+	<a href="https://en.wikipedia.org/wiki/Bay_leaf">
+	<img id="fotoResepGudeg10" src="Pic/Resep Gudeg/salam.jpg"></img>
+	</a>
+	<div id="ketResepGudeg10">
+		10.Daun salam
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Gula_aren#Sebagai_gula_merah">
+	<img id="fotoResepGudeg11" src="Pic/Resep Gudeg/gulaMerah.jpg"></img>
+	</a>
+	<div id="ketResepGudeg11">
+		11.Gula Merah
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Daging_ayam">
+	<img id="fotoResepGudeg12" src="Pic/Resep Gudeg/pahaAyam.jpg"></img></a>
+	<div id="ketResepGudeg12">
+		12.Paha Ayam
+	</div>
+	
+	<a href = "https://id.wikipedia.org/wiki/Telur">
+	<img id="fotoResepGudeg13" src="Pic/Resep Gudeg/telurAyam.jpg"></img></a>
+	<div id="ketResepGudeg13">
+		13.Telur Ayam
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Tahu"><img id="fotoResepGudeg14" src="Pic/Resep Gudeg/tahuPutih.jpg"></img></a>
+	<div id="ketResepGudeg14">
+		14.Tahu Putih
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Kantung_teh"><img id="fotoResepGudeg15" src="Pic/Resep Gudeg/tehCelup.jpg"></img></a>
+	<div id="ketResepGudeg15">
+		15.Teh Celup
+	</div>
+</div>
+
+<h2>Gudeg Yogja</h2>
+<h3>Bahan</h3>
+<ul>
+<li>150 gram nangka muda</li>
+<li>6 siung bawang merah</li>
+<li>3 siung bawang putih</li>
+<li>3 butir kemiri</li>
+<li>1 sdm ketumbar</li>
+<li>1/2 sdt garam</li>
+<li>1/2 sdm kaldu bubuk ayam</li>
+<li>65 ml santan</li>
+<li>3 iris lengkuas (1 - 2 cm)</li>
+<li>3 lembar daun salam</li>
+<li>3-5 sdm gula merah (hitam) /menyesuaikan kepekatan dan kemanisan</li>
+<li>2 potong paha ayam</li>
+<li>2 butir telur ayam</li>
+<li>2 buah tahu putih</li>
+<li>2 pcs teh celup (tanpa aroma) (ini optional)</li>
+</ul>
+</div>
+<h3>Langkah</h3>
+<ol>
+<li>Rebus telur ayam hingga matang selama 10 menit. Kupas cangkang telur.</li>
+<li>Rebus air hingga mendidih, tambahkan teh celup hingga bewarna merah kegelapan</li>
+<li>Masukan nangka muda kedalam rebusan air teh selama 10-15 menit atau hingga warna nangka kecokelatan</li>
+<li>Haluskan bawang merah, bawang putih, kemiri, ketumbar, dan tambahkan garam</li>
+<li>Tumis bumbu yang sudah dihaluskan hingga beraroma harum, masukan lengkuas daun salam, kaldu bubuk dan ayam. Aduk hingga rata, dilanjutkan dengan penambahan air matang secukupnya (cek rasa). Biarkan hingga mendidih.</li>
+<li>Masukan nangka yang sudah direbus, tumisan bumbu ayam, gula merah, tahu dan telur kedalam panci. Tambahkan santan, aduk aduk hingga rata</li>
+<li>Tambahkan air secukupnya. Biarkan hingga air menyusut tapi jangan sampai gosong ya</li> 
+<li>Angkat dan pindahkan kedalam piring.</li>
+</ol>
+<iframe class="vidResep" id="vidGudeg" src="https://www.youtube.com/embed/fyWR9Gvs5ts" frameborder="0" allowFullScreen="allowFullScreen"></iframe><br/>
+Sumber : <a href="https://cookpad.com/id/resep/12469797-gudeg-jogja-simple?via=search&search_term=gudeg%20yogya">https://cookpad.com/id/resep/12469797-gudeg-jogja-simple?via=search&search_term=gudeg%20yogya</a>
+
+</div>
+
+<div id="isiKletek" class="makanan">
+
+<div class="fotoMakan" >
+	Bahan
+	<a class="prev" id="previous" onclick="downMakan('fotoResepKletek','ketResepKletek','17')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoResepKletek','ketResepKletek','17')">></a>
+	
+	<a href="https://id.wikipedia.org/wiki/Daging_kambing">
+	<img id="fotoResepKletek1" src="Pic/Resep Sate Klatak/Daging kambing.jpg"></img>
+	</a>
+	<div id="ketResepKletek1">
+		1.Daging kambing
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Tusuk_sate">
+	<img id="fotoResepKletek2" src="Pic/Resep Sate Klatak/tusukSate.jpg"></img>
+	</a>
+	<div id="ketResepKletek2">
+		2.Tusuk sate
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Garam">
+	<img id="fotoResepKletek3" src="Pic/Resep Sate Klatak/Garam.jpg"></img>
+	</a>
+	<div id="ketResepKletek3">
+		3.Garam
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Daging_kambing">
+	<img id="fotoResepKletek4" src="Pic/Resep Sate Klatak/susu.jpg"></img>
+	</a>
+	<div id="ketResepKletek4">
+		4.Susu
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Bawang_merah">
+	<img id="fotoResepKletek5" src="Pic/Resep Sate Klatak/bawangMerah.jpg"></img>
+	</a>
+	<div id="ketResepKletek5">
+		5.Bawang Merah
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Bawang_putih">
+	<img id="fotoResepKletek6" src="Pic/Resep Sate Klatak/bawangPutih.jpg"></img>
+	</a>
+	<div id="ketResepKletek6">
+		6.Bawang Putih
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Kemiri">
+	<img id="fotoResepKletek7" src="Pic/Resep Sate Klatak/kemiri.jpg"></img>
+	</a>
+	<div id="ketResepKletek7">
+		7.Kemiri
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Cabai">
+	<img id="fotoResepKletek8" src="Pic/Resep Sate Klatak/cabai merah.jpg"></img>
+	</a>
+	<div id="ketResepKletek8">
+		8.Cabai Merah
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Kunyit">
+	<img id="fotoResepKletek9" src="Pic/Resep Sate Klatak/kunyit bubuk.jpg"></img>
+	</a>
+	<div id="ketResepKletek9">
+		9.Kunyit Bubuk
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Gula">
+	<img id="fotoResepKletek10" src="Pic/Resep Sate Klatak/gula.jpg"></img>
+	</a>
+	<div id="ketResepKletek10">
+		10.Gula
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Kaldu">
+	<img id="fotoResepKletek11" src="Pic/Resep Sate Klatak/kalduBubuk.jpg"></img>
+	</a>
+	<div id="ketResepKletek11">
+		11.Kaldu bubuk
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Jintan">
+	<img id="fotoResepKletek12" src="Pic/Resep Sate Klatak/jintan bubuk.jpg"></img>
+	</a>
+	<div id="ketResepKletek12">
+		12.Jintan
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Ketumbar">
+	<img id="fotoResepKletek13" src="Pic/Resep Sate Klatak/ketumbar bubuk.jpg"></img>
+	</a>
+	<div id="ketResepKletek13">
+		13.Ketumbar
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Kaldu">
+	<img id="fotoResepKletek14" src="Pic/Resep Sate Klatak/airKaldu.jpg"></img>
+	</a>
+	<div id="ketResepKletek14">
+		14.Air kaldu
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Salam_(tumbuhan)">
+	<img id="fotoResepKletek15" src="Pic/Resep Sate Klatak/daun salam.jpg"></img>
+	</a>
+	<div id="ketResepKletek15">
+		15.Daun Salam
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Serai">
+	<img id="fotoResepKletek16" src="Pic/Resep Sate Klatak/serai.jpg"></img>
+	</a>
+	<div id="ketResepKletek16">
+		16.Sereh
+	</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Jeruk">
+	<img id="fotoResepKletek17" src="Pic/Resep Sate Klatak/daunJeruk.jpg"></img>
+	</a>
+	<div id="ketResepKletek17">
+		17.Daun Jeruk
+	</div>
+</div>
+
+<h2>Sate Klatak</h2>
+<h3>Bahan-bahan</h3>
+<h3>4 porsi</h3>
+<ul>
+
+<li>500 gram Daging Kambing Paha</li>
+<li>Secukupnya Tusuk Sate(resep asli menggunakan tusuk sepeda)</li>
+<li>1 sdt Garam</li>
+
+<li>Bumbu Gulai :</li>
+<li>150 ml Susu Full Cream UHT</li>
+<li>3 siung Bawang Merah</li>
+<li>2 siung besar Bawang Putih</li>
+<li>2 butir Kemiri</li>
+<li>1 buah Cabe Merah</li>
+<li>1 sdt kunyit bubuk</li>
+<li>1 sdt Garam</li>
+<li>1 sdt Gula</li>
+<li>1 sdt kaldu bubuk</li>
+<li>1/2 sdt Jintan bubuk</li>
+<li>1/2 sdt ketumbar bubuk</li>
+<li>1 L air Kaldu</li>
+<li>Secukupnya Salam, Sereh Daun Jeruk</li>
+
+<li>Spices :</li>
+	<ul>
+	<li>1 buah Bunga Lawang</li>
+	<li>Kapulaga</li>
+	<li>Keningar</li>
+	<li>Cengkeh</li>
+	</ul>
+</ul>
+<h3>Langkah</h3>
+<ol>
+<li>Pisahkan Daging berdasar Loin- nya, Daging Kambing sangat khas, bagian empuknya mudah dikenali - bagian yg berserat dan layer dengan lemak bisa untuk Gulai</li>
+<li>Bagian yg khusus untuk Sate - kebetulan ini saya dapat Kambing Batibul (bawah Tiga Bulan)- mesakke juga ya, kambing usia 3 bulan sdh di Carving- potong-potong dan beri sepotong lemak di bagian bawah bila suka agar lembut dan aromanya sempurna</li>
+<li>Sembari menyusun sate, Rebus Daging bersama Daun Salam, Sereh, daun Jeruk, cengkeh, kapulaga, keningar, bunga lawang, hingga lunak. Blender Duo Bawang, kemiri dan cabe, tumis hingga harum, Masukkan kedalam sup daging. Tambahkan bubuk jintan, ketumbar dan kunyit.</li>
+<li>Setelah matang, masukkan gula garam, koreksi rasa, terakhir masukkan Susu Full Cream</li>
+Panaskan Pan sampai berasap - kalau ada Arang lebih baik - Tuang kuah Gule Susu di piring, masukkan sate dan bakar hingga matang sesuai selera</li>
+<li>Letakan Sate yang telah dibakar diatas Gule Kambing</li>
+<li>Sajikan dengan Rajangan Kobis, Irisan Tomat Timun Cabe</li>
+</ol>
+<iframe class="vidResep" id="vidKlatak"  allowFullScreen="allowFullScreen" src ="https://www.youtube.com/embed/1CZxt4L14Jk"></iframe><br/>
+Sumber : <a href="https://cookpad.com/id/resep/7180805-sate-klatak?via=search&search_term=sate%20klatak">https://cookpad.com/id/resep/7180805-sate-klatak?via=search&search_term=sate%20klatak</a>
+
+</div>
+
+<div id="isiTiwul" class="makanan">
+
+<div class="fotoMakan" >
+	Bahan
+	<a class="prev" id="previous" onclick="downMakan('fotoResepTiwul','ketResepTiwul','2')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoResepTiwul','ketResepTiwul','2')">></a>
+	
+	<a href="https://id.wikipedia.org/wiki/Gaplek">
+	<img id="fotoResepTiwul1" src="Pic/Resep Tiwul/gapleh.jpg"></img>
+	</a>
+	<div id="ketResepTiwul1">1.Tepung Gapleh</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Air">
+	<img id="fotoResepTiwul2" src="Pic/Resep Tiwul/air.png"></img>
+	</a>
+	<div id="ketResepTiwul2">2.Air</div>
+	
+</div>
+
+<h2>Nasi Tiwul Yogyakarta</h2>
+<h3>Bahan-bahan</h3>
+
+<ul>
+<li>1/5 kg tepung gaplek</li>
+<li>3 gelas air</li>
+</ul>
+
+<h3>Langkah</h3>
+
+<ol>
+<li>Ambil tempayan atau tampah kita ambil tepung gaplek ke ambil tuangkan air sedikit" uleni (aduk dengan tangan)</li>
+<li>Jika sudah dirasa pas adonan. Interi adonan/ putar putar adonan satu arah sampai membentuk bulatan kecil</li>
+<li>Didihkan air untuk mengukus nasi tiwul. Jika sudah mendidih, masukkan adonan tiwul ke panci.</li>
+<li>Saat setengah matang kita balik pakai centong biar matangnya merata.kukus selama 15 menit lalu angkat</li>
+<li>Nasi tiwul sudah siap</li>
+</ol>
+
+<iframe class="vidResep"  id="vidTiwul"  allowFullScreen="allowFullScreen" src ="https://www.youtube.com/embed/l6RLPdRDiEk"></iframe><br/>
+Sumber : <a href="https://cookpad.com/id/resep/5801556-nasi-tiwul-khas-gunung-kidul-jatim">https://cookpad.com/id/resep/5801556-nasi-tiwul-khas-gunung-kidul-jatim</a>
+
+</div>
+
+<div id="isiKrecek" class="makanan" >
+<div class="fotoMakan" >
+	Bahan
+	<a class="prev" id="previous" onclick="downMakan('fotoResepKrecek','ketResepKrecek','12')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoResepKrecek','ketResepKrecek','12')">></a>
+	
+	<a href="https://id.wikipedia.org/wiki/Krecek">
+	<img id="fotoResepKrecek1" src="Pic/Resep Sambal Krecek/kerupukKrecek.jpg"></img></a>
+	<div id="ketResepKrecek1">1.Kikil sapi</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Cabai_rawit">
+	<img id="fotoResepKrecek2" src="Pic/Resep Sambal Krecek/cabai.jpg"></img></a>
+	<div id="ketResepKrecek2">2.Cabai</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Santan">
+	<img id="fotoResepKrecek3" src="Pic/Resep Sambal Krecek/santan.jpg"></img></a>
+	<div id="ketResepKrecek3">3.Santan Encer</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Salam_(tumbuhan)">
+	<img id="fotoResepKrecek4" src="Pic/Resep Sambal Krecek/salam.jpg"></img></a>
+	<div id="ketResepKrecek4">4.Daun Salam</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Lengkuas">
+	<img id="fotoResepKrecek5" src="Pic/Resep Sambal Krecek/lengkuas.jpg"></img></a>
+	<div id="ketResepKrecek5">5.Lengkuas</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Minyak_masakan">
+	<img id="fotoResepKrecek6" src="Pic/Resep Sambal Krecek/minyak.jpg"></img></a>
+	<div id="ketResepKrecek6">6.Minyak Goreng</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Gula_aren">
+	<img id="fotoResepKrecek7" src="Pic/Resep Sambal Krecek/gulaMerah.jpg"></img></a>
+	<div id="ketResepKrecek7">7.Gula Merah</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Air">
+	<img id="fotoResepKrecek8" src="Pic/Resep Sambal Krecek/air.png"></img></a>
+	<div id="ketResepKrecek8">8.Air</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Bawang_merah">
+	<img id="fotoResepKrecek9" src="Pic/Resep Sambal Krecek/bawangMerah.jpg"></img></a>
+	<div id="ketResepKrecek9">9.Bawang Merah</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Bawang_putih">
+	<img id="fotoResepKrecek10" src="Pic/Resep Sambal Krecek/bawangPutih.jpg"></img></a>
+	<div id="ketResepKrecek10">10.Bawang Putih</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Cabai">
+	<img id="fotoResepKrecek11" src="Pic/Resep Sambal Krecek/cabaiBesar.jpg"></img></a>
+	<div id="ketResepKrecek11">11.Cabai Besar</div>
+	
+	<a href="https://id.wikipedia.org/wiki/Garam">
+	<img id="fotoResepKrecek12" src="Pic/Resep Sambal Krecek/garam.jpg"></img></a>
+	<div id="ketResepKrecek12">12.Garam</div>
+	
+</div>
+
+<h2>Sambal Krecek Yogya</h2>
+<h3>Bahan</h3>
+<ul>
+<li>150 gr Kikil/krecek (potong kecil kecil)</li>
+<li>15 buah Cabai rawit segar (cuci bersih)</li>
+<li>1 liter santan encer</li>
+<li>3 lembar daun salam</li>
+<li>1 ruas lengkuas (memarkan)</li>
+<li>Secukupnya minyak goreng</li>
+<li>1 sdm gula merah</li>
+<li>secukupnya Air</li>
+<li>Bumbu halus:</li>
+<ul>
+	<li>6 siung bawang merah</li>
+	<li>4 siung bawang putih</li>
+	<li>5 buah cabai merah besar</li>
+	<li>Secukupnya garam</li>
+</ul>
+</ul>
+
+<h3>Langkah</h3>
+<ol>
+<li>Siapkan wadah, lalu rendam krecek dalam wadah tersebut menggunakan air secukupnya. Nantinya, akan tampak minyak dan kotoran yang mengapung di atas air rendamannya jika krecek tersebut mengandung minyak dan kotoran yang berlebihan. Kemudian buang air rendamannya dan tiriskan krecek tersebut. Sisihkan.</li>
+
+<li>Haluskan bumbu, lalu siapkan wajan dan panaskan minyak untuk menumis bumbu halusnya. Tumis bumbu halus hingga aromanya harum, kemudian tambahkan daun salam dan lengkuas, dan aduk rata sampai bumbu matang sempurna</li>
+
+<li>Tuangkan santan encer yang telah disiapkan. Aduk terus secara perlahan hingga santan mendidih, kemudian masukkan kulit sapi atau kreceknya. Aduk hingga semua bumbu meresap.</li>
+
+<li>Setelah air santan menyusut hingga ¼ bagian, masukkan cabai rawit utuh, serta masukkan juga gula merah. Aduk kembali hingga semua bahan tercampur dan meresap sempurna. Lakukan sampai sambal matang, kemudian matikan kompor.</li>
+
+<li>Sambel goreng krecek siap dihidangkan untuk keluarga tercinta, enak dimakan bersama gudeg dan nasi hangat. </li>
+
+</ol><iframe class="vidResep"  id="vidKrecek" allowFullScreen="allowFullScreen" src ="https://www.youtube.com/embed/IWRzPtgVp7E"></iframe><br/>
+Sumber : <a href="https://cookpad.com/id/resep/8057899-sambel-goreng-krecek-khas-jogja">https://cookpad.com/id/resep/8057899-sambel-goreng-krecek-khas-jogja</a>
+
+</div>
+
+</div>
+</p>
+</div>
+
+<div id="preloaded-images">
+</div>
+
+<div id="preloaded-images2">
+</div>
+</body>
+</html>

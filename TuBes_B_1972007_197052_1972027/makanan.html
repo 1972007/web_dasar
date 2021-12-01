@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Model.css">
+	<meta charset="UTF-8">
+	
+	<style>
+	
+	</style>
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type='text/javascript' src="javascript.js">
+	</script>
+</head>
+
+<body onload='hour();online()'>
+
+<div class="cekSignal">
+<img id="onlineOffline" width='100px' height='100px'src=""></img>
+</div>
+
+
+<div id="YOGYA"><marquee behavior="alternate" scrollamount="15">Yogyakarta</marquee></div>
+<br>
+<table id='pilihan'>
+	<tr >
+		<td>
+		<a id="definisi" class="linking" href="index.html">Sekilas</a>
+		
+		<a id="makanan"  class="begin">Makanan</a>
+		<a id="buat"  class="linking" href="buat.html" >Pembuatan</a>
+		<a id="Pembuat"  class="linking" href="tentang.html" >Tentang Kami</a>
+		<div id='jaam' class="wite"></div>
+		<button align="center" onclick="cssHour()">Toggle</button>
+		</td>
+		</td>
+	</tr>
+	<!--<tr><td></td></tr>-->
+
+</table>
+
+
+<div id="isi" >
+<p id="konten">
+<h2 align="center">Makanan</h2>
+<a id="gudeg" class="pilihMakan" onclick="reseting('fotoGudeg','ketGudeg','4');show('isiGudeg','isiKletek','isiTiwul','isiKrecek')">Nasi Gudeg</a>
+<a id="kletek" class="pilihMakan" onclick="reseting('fotoKletek','ketKletek','4');show('isiKletek','isiGudeg','isiTiwul','isiKrecek')">Sate Kletek</a>
+<a id="tiwul" class="pilihMakan" onclick="reseting('fotoTiwul','ketTiwul','2');show('isiTiwul','isiKletek','isiGudeg','isiKrecek')">Nasi Tiwul</a>
+<a id="krecek" class="pilihMakan"  onclick="reseting('fotoTiwul','ketTiwul','2');show('isiKrecek','isiTiwul','isiKletek','isiGudeg')")>Sambel Krecek</a>
+<br/><br/>
+
+
+<div id="isiGudeg" class="makanan" >
+<div class="fotoMakan" >
+	Gambar
+	<a class="prev" id="previous" onclick="downMakan('fotoGudeg','ketGudeg','5')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoGudeg','ketGudeg','5')">></a>
+	<img id="fotoGudeg1" src="Pic/gudeg.jpg"></img>
+	<div id="ketGudeg1">
+		Nasi Gudeg
+	</div>
+	
+	<img id="fotoGudeg2" src="Pic/besek.jpg"></img>
+	<div id="ketGudeg2">
+		Gudeg dalam Besek
+	</div>
+	
+	<img id="fotoGudeg3" src="Pic/gudegBasah.jpg"></img>
+	<div id="ketGudeg3">
+		Gudeg Basah
+	</div>
+	
+	<img id="fotoGudeg4" src="Pic/gudegKering.jpg"></img>
+	<div id="ketGudeg4">
+		Gudeg Kering
+	</div>
+	
+	<img id="fotoGudeg5" src="Pic/Gudeg kendil.jpg"></img>
+	<div id="ketGudeg5">
+		Gudeg dalam Kendil
+	</div>
+</div>
+
+<h2>Sekilas Nasi Gudeg</h2>
+<p>
+Gudeg adalah makanan tradisional yang terbuat dari Nangka muda (nangka) yang direbus selama beberapa jam dengan gula kelapa serta santan. Dengan dilengkapi dengan berbagai bumbu tambahan membuat Gudeg menjadi terasa manis dilidah dan memiliki rasa yang khas dan enak sesuai dengan selera masyarakat Jawa pada umumnya.
+</p>
+<p>
+Pada penyajiannya, Gudeg biasa di lengkapi dengan nasi putih, ayam, telur rebus, tahu atau tempe, dan rebusan terbuat dari kulit sapi segar atau lebih dikenal dengan nama sambal goreng krecek. Ada beberapa jenis Gudeg yang dikenal saat ini yaitu jenis Gudeg kering dan Gudeg basah. Gudeg kering hanya memiliki sedikit santan sementara Gudeg basah mencakup lebih banyak susu kelapa atau santan. Jenis-jenis Gudeg tersebut juga mempengaruhi rasa yang dimiliki oleh Gudeg. Meskipun biasanya manis, Gudeg kadang juga memiliki rasa yang pedas seperti yang terdapat pada wilayah Jawa Timur.
+</p>
+<p>
+Awalnya Gudeg yang dikenal oleh masyarakat Indonesia khususnya Yogyakarta jaman dahulu adalah Gudeg Basah. Seiring perkembangan jaman, kebutuhan Gudeg untuk oleh-oleh yang semakin berkembang juga seirama dengan munculnya Gudeg kering. Gudeg kering baru ditemukan sekitar enam dasawarsa yang lalu. Sifatnya yang kering membuat gudeg tersebut tahan lama dan sering dimanfaatkan sebagai oleh-oleh yang tentu saja berdampak dengan munculnya industri rumahan yang menyajikan oleh-oleh Gudeg khas Yogyakarta.
+</p>
+<p>
+Keunikan lainnya dari masakan gudeg adalah kemasannya. Apabila Anda berbelanja Gudeg sebagai makanan khas Yogyakarta, tidak jarang Gudeg tersebut dikemas dengan menggunakan besek. Besek adalah bungkus dari anyaman bamboo yang dibentuk sedemikian rupa berbentuk segi empat dan dapat digunakan sebagai tempat Makanan. Selain itu Gudeg juga sering dikemas menggunakan kendil yaitu berupa wadah yang terbuat dari tanah liat. Kemasan tersebut biasanya banyak ditemukan pada para penjual gudeg yang telah terkenal di Yogyakarta.
+</p>
+sumber : <a href="https://gudeg.net/direktori/1860/sejarah-gudeg.html">https://gudeg.net/direktori/1860/sejarah-gudeg.html</a>
+</div>
+
+<div id="isiKletek" class="makanan">
+<div class="fotoMakan" >
+	Gambar
+	<a class="prev" id="previous" onclick="downMakan('fotoKletek','ketKletek','4')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoKletek','ketKletek','4')">></a>
+	<img id="fotoKletek1" src="Pic/kletek1.jpg"></img>
+	
+	<img id="fotoKletek2" src="Pic/kletek2.jpg"></img>
+	
+	<img id="fotoKletek3" src="Pic/kletek3.jpg"></img>
+	
+	<img id="fotoKletek4" src="Pic/kletek4.jpg"></img>
+	Sate Kletek
+</div>
+<h2>Sekilas Sate Kletek (atau Sate Klatak)</h2>
+<p>
+Sate Klatak adalah sate yang berbahan dasar kambing. Yang membedakan sate tersebut dengan sate lainnya adalah pada bumbu untuk pengolahan sate. Sate Klatak tidak menggunakan bumbu kecap atau kacang melainkan hanya dibumbui dengan garam. Meskipun sangat sederhana, namun sate Klatak sangat diminati oleh pengunjung dann justru menjadi salah satu icon kuliner di Kota Yogyakarta. Keistimewaan sate tersebut tidak berhenti sampai disitu, keistimewaan lainnya dari Sate Klatak adalah pada penyajiannya. Tusuk sate yang digunakan bukan dari bambu namun menggunakan besi jeruji sepeda. Penggunaan jeruji ini dipercaya dapat menghantarkan panas yang baik sehingga daging dapat matang dengan sempurna.
+</p>
+<p>
+Sate ini adalah ide dari Mbah Ambyah karena beliau memiliki banyak kambing. Awalnya julan sate tersebut dijual di bawah pohon melinjo. Usaha  tersebut kemudian diturunkan pada anak-anaknya. Dalam perkembangan popularitas Sate Klatak tersebut, membuat banyak warga sekitar Jejeran juga memutuskan untuk membuka warung sate yang sama dengan lokasi yang berdekatan bahakan sampai membangun restaurant yang dikelola secara professional sampai saat ini. Sesungguhnya asal mula Nama Sate Klatak tidak diketahui secara jelas darimana asalnya. Ada orang yang meyakini nama tersebut dari suara daging kambing yang dibakar. Sebagian lainnya mempercayai bahawa Klatak adalah nama buah melinjo dimana sate Klatak pertama kali dijual.
+</p>
+<p>
+Sampai saat ini Sate Klatak masih sangat dikenal oleh wisatawan bahakan dari kalangan selebritis dan seniman sekalipun. Apabila Anda mencari variasi makanan sate di Yogyakarta, Sate Klatak adalah salah satu alternatif yang pantas dituju. Lokasinya mudah ditemui karena akses jalan yang sangat mudah dicapai baik menggunakan roda empat maupun roda dua. Meskipun Anda mungkin tercengang dengan harga yang lumayan dan hanya mendapatkan dua potong sate, namun sate tersebut memiliki daging yang besar tidak seperti sate-sate lainnya selain rasanya yang khas.
+</p>
+sumber : <a href="https://gudeg.net/direktori/1871/sate-klatak.html" >https://gudeg.net/direktori/1871/sate-klatak.html</a>
+</div>
+
+<div id="isiTiwul" class="makanan">
+<div class="fotoMakan" >
+	Gambar
+	<a class="prev" id="previous" onclick="downMakan('fotoTiwul','ketTiwul','2')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoTiwul','ketTiwul','2')">></a>
+	<img id="fotoTiwul1" src="Pic/tiwul.jpg"></img>
+	<div id="ketTiwul1">
+	Nasi Tiwul
+	</div>
+	
+	<img id="fotoTiwul2" src="Pic/nasgorTiwul.jpg"></img>
+	<div id="ketTiwul2">
+	Kreasi Nasi Goreng Tiwul
+	</div>
+	
+</div>
+<h2>Nasi Tiwul</h2>
+<p>
+Tiwul salah satu makanan khas yang berasal dari Gunung kidul, Yogyakarta merupakan salah satu makanan berbahan dasar singkong atau ketela pohon. Masyarakat Gunung Kidul jaman dahulu sering memanfaatkan makan ini sebagai makanan pokok pengganti nasi. Meskipun dalam perkembangannya saat ini nasi telah menjadi makanan pokok, namun Tiwul tetap dikenal sebagai makanan khas yang cukup bersejarah. Makanan ini dipercaya juga pernah digunakan sebagai makanan pokok ketika masa penjajahan Jepang.
+</p>
+<p>
+Tiwul dibuat dari gaplek yang merupakan hasil olahan singkong yang telah dikupas dan dikeringkan. Dari pengeringan tersebut setelah diolah akan diperoleh tepung singkong yang nantinya akan diolah menjadi Tiwul. Sebagai makanan pokok, kandungan kalorinya lebih rendah daripada beras namun cukup memenuhi sebagai bahan makanan pengganti beras. Tiwul dipercaya mencegah penyakit maag, perut keroncongan, dan lain sebagainya.
+</p>
+<p>
+Karena tidak banyak lagi masyarakat yang memanfaatkan makanan ini sebagai makanan pokok, Tiwul kemudian dikreasikan dengan berbagai bentuk dan dikembangkan sebagai  makanan yang modern. Hal ini tentu saja membuat keberadaan Tiwul tidak dilupakan justru semakin dikenal sebagai salah satu kekayaan khas di Yogyakarta khususnya di Gunung kidul. Oleh karena itu, jika Anda ingin berwisata melalui daerah Gunung Kidul, sempatkanlah waktu untuk membeli dan menikmati makanan ini. Harga untuk membeli tiwul ini relatif sangat murah karena cukup mengeluarkan uang antara Rp.5000,00 - Rp.15.000,00 Anda sudah dapat menikmati makanan dengan rasa yang manis gurih ini.
+</p>
+</div>
+
+<div id="isiKrecek" class="makanan">
+<div class="fotoMakan" >
+	Gambar
+	<a class="prev" id="previous" onclick="downMakan('fotoKrecek','ketKrecek','2')"><</a>
+	<a class="next" id="nexts" onclick="upMakan('fotoKrecek','ketKrecek','2')">></a>
+	
+	<img id="fotoKrecek1" src="Pic/krecek.jpg"></img>
+	<div id="ketKrecek1">Sambal Krecek</div>
+	
+	<img id="fotoKrecek2" src="Pic/kerupukKrecek.jpg"></img>
+	<div id="ketKrecek2">Bahan Krecek</div>
+	
+</div>
+<h2>Sambal Krecek</h2>
+<p>
+Krecek atau kerecek sendiri adalah kulit sapi yang di keringkan dapat digunakan dalam masakan atau dibuat kerupuk, cara masak menggunakan bumbu-bumbunya sama dengan bumbu-bumbu sambal goreng, hanya kuahnya agak banyak. Di daerah Jawa Tengah yang dimaksud krecek adalah sambal goreng tempe dengan kerupuk kulit.
+</p>
+<p>
+Bahan krecek terbuat dari kulit sapi yang dipotong kecil kecil dan di goreng sehingga menjadi kerupuk kulit. Setelah menjadi kerupuk kulit kemudian dicampurkan pada masakan tertentu, bisa bersama tahu atau tempe atau oncom.
+</p>
+<p>
+Sambal goreng krecek ini sangat sedap dan enak jika disatukan dengan masakan yang terdapat nasi putih. 
+</p>
+sumber : <a href="https://id.wikipedia.org/wiki/Krecek">https://id.wikipedia.org/wiki/Krecek</a>
+</div>
+</div>
+
+</p>
+</div>
+
+<div id="preloaded-images">
+</div>
+<div id="preloaded-images2">
+</div>
+
+</body>
+</html>

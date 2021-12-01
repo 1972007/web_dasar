@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Model.css">
+	<meta charset="UTF-8"></meta>
+	<style>
+	
+	</style>
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type='text/javascript' src="javascript.js">
+	</script>
+</head>
+
+<body onload='hour();online()'>
+
+<div class="cekSignal">
+<img id="onlineOffline" width='100px' height='100px'src=""></img>
+</div>
+
+<div id="YOGYA"><marquee behavior="alternate" scrollamount="15">Yogyakarta</marquee></div>
+<br>
+<table id='pilihan'>
+	<tr >
+		<td>
+		<a id="definisi" class="linking" href="index.html">Sekilas</a>
+		
+		<a id="makanan"  class="linking" href="makanan.html" >Makanan</a>
+		<a id="buat"  class="linking" href="buat.html" >Pembuatan</a>
+		<a id="Pembuat"  class="begin">Tentang Kami</a>
+		<div id='jaam' class="wite"></div>
+		<button align="center" onclick="cssHour()">Toggle</button>
+		</td>
+		</td>
+	</tr>
+	<!--<tr><td></td></tr>-->
+
+</table>
+
+
+<div id="isi">
+<div id="tentangKami">
+	<h2>Sekilas tentang kami</h2>
+	Kami adalah mahasiswa pemorgraman yang mencoba membuat web dengan pengetahuan yang kami punya. Kami harap pembaca dapat menikmati web ini. Terima kasih
+</div>
+<h3 id="credit">Credit : </h3>
+<p>
+<div class="kartuNama" id="ke1" onclick="showContact('kontakJoseph','joseph')">
+	<img alt="Male" class="imgCredit"  src="Pic/male1.png"></img>
+	<div class="pCredit" id="joseph">Joseph Setiawan Hardadi</div>
+	<div class="contactCredit" id="kontakJoseph">
+		Contact:<br/>
+		josephsetiawanhardadi@gmail.com<br/>
+		<button class="contactMe"  id='contact1' href='mailto:josephsetiawanhardadi@gmail.com' onclick="window.open('mailto:josephsetiawanhardadi@gmail.com')">Contact me</button><br/>
+	</div>
+</div>
+
+<div class="kartuNama" id="ke2" onclick="showContact('kontakEdward','edward')" >
+<img alt="Male" class="imgCredit" src="Pic/male1.png"></img>
+<div class="pCredit" id="edward">Rizky Edward Iskandar</div>
+	<div class="contactCredit" id="kontakEdward">
+		Contact: <br/>
+		edward.iskandarajo@gmail.com<br/>
+		<button class="contactMe" id='contact2' href="mailto:edward.iskandarajo@gmail.com" target="_blank" >Contact me</button>
+	</div>
+</div>
+
+<div class="kartuNama"  id="ke3" onclick="showContact('kontakDonny','donny')">
+<img alt="Male" class="imgCredit" src="Pic/male1.png"></img>
+	<div class="pCredit" id="donny">Donny</div>
+	<div class="contactCredit" id="kontakDonny">
+		Contact: <br/>
+		donnyd957@gmail.com<br/>
+		<button class="contactMe"  id='contact3' href='mailto:donnyd957@gmail.com' onclick="window.open('mailto:donnyd957@gmail.com')">Contact me</button>
+	</div>
+</div>
+
+</div>
+
+<div id="preloaded-images">
+</div>
+
+<div id="preloaded-images2">
+</div>
+</body>
+</html>

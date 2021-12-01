@@ -1,0 +1,24 @@
+https://yogyakartaweb1.000webhostapp.com/tentang.html
+
+Fitur-fitur
+- Yogya marquee
+- Jam dan Hari
+- Toggle warna waktu jam dan hari
+- hover button
+- window .navigator .onLine
+
+- Auto slideshow di definisi
+
+- menu buttons makanan
+- menu buttons resep
+- slideToggle makanan
+
+
+- SlideToggle bahan resep
+- video
+- pic slideshow with link
+
+- Contact toggle dengan Nama di credit
+- Can contact (mailto)
+- ganti warna antara contact mailto dan nama
+
